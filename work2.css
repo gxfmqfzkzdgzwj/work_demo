@@ -1,0 +1,212 @@
+@charset "utf-8";
+/* CSS Document */
+.Page{
+	height:100%;
+	width:100%;
+	margin:0px;
+	padding:0px;
+	}
+.daoHang{
+	background-color:rgb(0,0,0);
+	height:90px;
+
+	}
+.logo_pic{
+	display:inline;
+	margin-left:24%;
+	vertical-align:middle;
+	margin-top:18px;
+	}
+.head_list li{
+    margin-right:40px;
+	font-size:16px;
+	color:#FFF;
+	display:inline;
+	list-style:none;
+	}
+	
+.item{
+	margin-left:20%;}
+	
+.drop-down{
+	position:relative;}
+
+.drop-down-content{
+	display:none;}
+.item :hover .drop-down-content{
+    display:block;
+  }
+.drop-down-content{
+	position:absolute;
+	}
+.Banner{
+	display:flex;
+	clear:both;
+	}
+/*	这里没有实现自适应以及背景颜色自动左右填充*/
+.Banner-col1{
+	width:50%;
+	background-color:rgb(0,153,153)}
+	
+.Banner-text{
+	background-color:rgb(0,153,153);
+	margin-left:57%;
+
+	}
+.transparent{
+	font-size:32px;
+	opacity:0.5;
+    line-height:12px;
+	}
+.non-trans{
+	font-size:44px;
+	line-height:10px;
+	}	
+.Banner-col1{
+	width:50%;}
+.Banner-col2{
+	width:50%;
+	background-image: url(https://ooo.0o0.ooo/2017/06/19/59472b9decc3c.png);}	
+
+#contend{
+    margin:0 auto;
+	width:960px;}
+ #three-col{
+	display:flex;
+	margin-bottom:10px;
+	margin-top:10px;
+	 }	
+.box, .box1{
+	width:33.3%;
+	display:inline-block;
+	border:1px solid rgb(204,204,204);
+	padding-left:10px;}
+.box{margin-right:10px;}
+.box1{margin-right:0px;}
+.onbottom{
+	word-wrap:break-word;
+	margin-right:30px;}
+
+.tab{text-align:center;	  border-bottom:1px solid rgb(204,204,204);/*这儿在后面被掩盖了，有待改进*/}
+.tab:hover{
+	  border: 1px solid rgb(204,204,204);
+      border-bottom: 0px;
+	}
+caption{text-align:left; 
+        font-size: 18px;
+		padding-top:15px; 
+		padding-bottom:30px;}
+tr td{
+	border-bottom:1px solid rgb(204,204,204);
+	border-top:1px solid rgb(204,204,204);
+	text-align:center;
+    height: 28px;
+    padding: 20px;
+}
+.gray{
+	background-color:gray;}
+th{font-size: 18px;}
+td{font-size: 14px;}
+table{width:960px;
+      margin-top:30px;
+	  border-collapse: collapse;/*这里是不要让行列之间出现空格*/
+	  }
+
+.final{
+   margin-top:10px;	
+   height: 180px;
+   background-image: url(https://ooo.0o0.ooo/2017/06/19/594791c169b40.png);
+}
+.list{
+	padding-left:80px;
+	padding-top:15px;
+	/*这里为什么设置margin却不可以？？想不通*/}
+select{
+      width: 180px;
+      height: 30px;
+      font-size: 12px;
+    }
+button{
+	height: 30px;
+	background-color:rgb(51,102,204);
+	margin-left:20px;
+	}
+	
+/*图片那里没有实现让文字出现在图的左下角 有待改进*/
+
+
+.pic-container {
+    width: 960px;
+    height: 180px;
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.allpic {
+    width: 400%;
+    height: 100%;
+/*    position: absolute;*/
+  /*  transform: translateX(-960px);*/
+}
+
+.tab-pic {
+    width: 25%;
+    height: 100%;
+    position: relative;
+    float: left;/*这个必不可少不知道为甚么*/
+
+}
+
+.tab-pic img {
+    width: 100%;
+    height: 100%;
+}
+
+.tab-pic .descrip {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.pre,
+.next {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    z-index: 1;
+    width: 20px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, .3);
+    /*opacity: .4;*/
+    color: #fff;
+    cursor: pointer;
+}
+
+.next {
+    right: 0;
+}
+
+.tab-btn {
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.tab-btn span {
+    cursor: pointer;
+    width: 40px;
+    border: 1px solid #EEEEEE;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+.tab-btn .on {
+    border: 1px solid #ABACAE;
+}
